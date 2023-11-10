@@ -1,0 +1,17 @@
+Folgende Schritte sind für die korrekte Auslieferung von Software-Modulen durchzuführen:
+
+* SVN_Update durchführen (es wird zur nächsten Revision aktualisiert (z.B. 143)
+* SVN_Revision ausführen (die Klasse CRevisiondInfo wird aktualisiert)
+* Dateiversion in den Assembly-Informationen in den Projekteeihenschaften anpassen 
+* Neu kompilieren (Batch Erstellen im Menü Erstellen ausführen) 
+* Release-Version in den HotUpdate-Ordner unter D:\Tagebaue\PBZ\PBZ-VM\VCS2008\Auslieferungen\PBZ\<projekt>\HotUpdate
+* Neues Verzeichnis zur aktuellen Version  unter „Auslieferungen“ erstellen
+* Benötigte Dateien dort hineinkopieren (in den Ordner Files)
+* Inno Setup starten
+* Installationsfile erstellen
+TASAPardef – Auslieferung   								1/1	
+
+
+Auslieferung-durchzuführende Schritte.doc
+PBZ-VM, Wilfried Zilger						         	25.08.2011 08:26:38
+

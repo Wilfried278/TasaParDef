@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TasaParDef.CEinstellungen" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAIAAAACIAsQAAAAAAAAAAAAIAsAAAAAAAAAAAAA=</HashCode>
+      <FileName>CEinstellungen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.CRevisionsInfo" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAYAADAAAAgACAAAAQAAAAAAAAAEAAAABAAAAAAE=</HashCode>
+      <FileName>CRevisionsInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.CSAADialogdaten" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBCAFAAAAgAAAAAAKEAAAERACAAAgAIQAgAAAAI=</HashCode>
+      <FileName>CSAADialogdaten.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.CSeilFehlerstelle" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAQCAAAIAAAAAAAAEAAAAgAaFEI=</HashCode>
+      <FileName>CSeilFehlerstellen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.CSeilFehlerstellenListe" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAKAAAIAEAAAgJAAIAAAAAQAAIYIAQEEgAAYAAJAoBA=</HashCode>
+      <FileName>CSeilFehlerstellenListe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TasaParDef.DlgFehlerstelleInsert" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgAgAAAAACAAABQAAACAAAASAAAAAQAAICCAEgCAAAA=</HashCode>
+      <FileName>DlgFehlerstelleInsert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.Hautform" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/4CDxLc0CntOhzymnZaENEma4LU7yTluCag5cTKNIfM=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.Program" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TasaParDef.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

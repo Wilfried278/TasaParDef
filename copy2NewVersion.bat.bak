@@ -1,0 +1,51 @@
+REM
+REM ---------------------------------------------------------------------------
+REM Kopieren der Releaseversion in ein Verzeichnis unterhalb des 
+REM Auslieferungsverzeichnisses D:\Tagebaue\PBZ\PBZ-VM\VCS2008\Auslieferungen
+REM \PBZ\<projekt>\NewVersion\files. 
+REM 
+REM Dies geschieht nur, wenn in den Postbuildereignissen die Batchdatei eingetragen ist als Parameter mit der Option >
+REM ---------------------------------------------------------------------------
+REM  
+
+@echo on
+cls
+
+
+
+REM if not "%1" == "Release" goto labelEnde
+
+set zielpfad=D:\Tagebaue\PBZ\PBZ-VM\VCS2008\Auslieferungen\PBZ\TasaparDef\NewVersion\files
+
+IF EXIST %zilepfad% GOTO DIREXIST
+
+REM -----------------------------------------------------------
+REM Verzeichnis erstellen falls existiert
+REM -----------------------------------------------------------
+
+		md ..\%zielpfad%
+
+:DIREXIST
+REM -----------------------------------------------------------
+REM evtl. vorhandene Dateien zuerst löschen
+REM -----------------------------------------------------------
+
+		echo J | del %zielpfad%\*.*
+
+REM -----------------------------------------------------------
+REM Diese Dateien kopieren
+REM -----------------------------------------------------------
+
+		xcopy 	/Y bin\release\Release\*.dll %zielpfad%\*.*
+		xcopy 	/Y bin\release\Release\*.exe %zielpfad%\*.*  /Exclude:*.vshost.exe
+		xcopy 	/Y bin\release\Release\*.xml %zielpfad%\*.*
+		xcopy 	/Y bin\release\Release\*.teil2 %zielpfad%\*.*
+		xcopy 	/Y Dokumentation\ReleaseNotes.txt %zielpfad%\*.abc
+
+REM -----------------------------------------------------------
+REM spezielle Dateien kopieren
+REM -----------------------------------------------------------
+		
+		xcopy 	/Y TasaParDef\obj\Release\*.teil2 %zielpfad%\*.*
+
+:labelEnde

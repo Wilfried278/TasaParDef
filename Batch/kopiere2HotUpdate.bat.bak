@@ -1,0 +1,7 @@
+@echo off
+set quellpfad=%1
+if not "%2" == "Release" goto labelEnde
+copy %quellpfad%bin\Release\TasaParDef.exe D:\Tagebaue\PBZ\PBZ-VM\VCS2008\Auslieferungen\PBZ\TasaparDef\HotUpdate\*.*
+if %errorlevel%==0 goto labelEnde
+pause
+:labelEnde

@@ -1,0 +1,154 @@
+﻿09.08.2011 Version 1.1 Revision 23
+----------------------------------
+
+In der vorliegenden Version sind die nachfolgend aufgeführten Punkte realisiert:
+
+-	der Seildurchmesser wurde von der Registerkarte SAA auf die Registerkarte 
+	TASA verlagert
+-	die Analyse für Fehlerstellen im Seil auf eine bestimmten Bezugslänge 
+	bezogen sind nun realisiert und getestet
+-	mit dem Button "Daten" auf dem Hauptformular kann nun ein Explorer gestartet
+	werden, der den Inhalt des Verzeichnisses auflistet, aus dem die Headerdatei
+	der Messdaten stammt
+-	mit dem Button "Listen" auf dem Hauptformular kann das unter Einstellungen
+	definierte Verzeichnis für die Listenausgabe in einem Explorer angezeigt
+	werden
+-	Um die Kommunikation mit den Anwendern zu erleichtern, wurde ein Linklabel
+	eingeführt, dass den E-Mail-Client startet um eine E-Mail zu versenden.
+	
+	
+	
+09.08.2011 Version 1.1 Revision 24
+----------------------------------
+
+In der vorliegenden Version sind die nachfolgend aufgeführten Punkte realisiert:
+
+-	auf der Registerkarte SAA wird die akzeptierte Lagedifferenz mit 0,15 m 
+	vorbelegt
+	
+	
+	
+	
+09.08.2011 Version 1.1 Revision 25
+----------------------------------
+
+In der vorliegenden Version sind die nachfolgend aufgeführten Punkte realisiert:
+
+-	ein ungültiger Seildruchmesser wird nun mit einer sprechenden Fehlermeldung
+	kommentiert
+	
+	
+	
+
+10.08.2011 Version 1.1 Revision 26
+----------------------------------
+
+In der vorliegenden Version sind die nachfolgend aufgeführten Punkte realisiert:
+
+-	die Nummerierung der ListView auf der Registerkarte Fehlerstellen war dann
+	fehlerhaft, wenn doppelte Fehler (die aus Udo's Programm kommen) ignoriert
+	wurden. Dieser Fehler ist nun behoben
+		
+	
+	
+
+14.08.2011 Version 1.2 Revision 30
+----------------------------------
+
+-	Änderung des Dateinamens zur Sicherung der Datei saaproreg.par
+-	Dateinamen in CSAADialogdaten an Position 14.08.2011 12:18:39 
+-	Neue Dialoggestaltung  DlgFehlerstelleInsert.cs, mit RadioButton
+-	Sicherung nach redaktionellen Änderungen
+-	Rechtschreibfehler korrigiert
+-	Fehlermeldungen bei der Methode checkDouble werden nun durchgereicht und dem 
+	Anwender in Klartext ausgegeben
+ 
+ 
+
+16.08.2011 Version 1.2 Revision 37
+----------------------------------
+
+-	Fehler beim Dateinamen für die Sicherung der saaproreg.par behoben
+-	Exception bei der Erzeugung der Digrammdateien für die grafische
+	Darstellung der Seiilfehler je Bezugslänge wurde mit der StackTrace
+	Information versehen.
+-	Der Tabellenbereich für die X-Achse des Diagramms wurde je nach
+	Anzahl der vorhandene Zeilen angepasst.
+	
+-	Zukünftig: Es sollte eine Überschrift für das Diagramm und die
+	geprüfte Seillänge (von Udo's Programm) mit übergeben werden
+
+
+
+16.08.2011 Version 1.3 Revision 68
+----------------------------------
+
+ -Auswahl des Hebenschriebs für die Ermittlung der gepr. Seillänge 
+ -Button "Daten" zum Starten des Explorers ist nun immer aktiv.
+ -Button "Listen" entfernt
+ -Geprüfte Seillänge aus TASA-Informationsdatei lesen
+ -Das Laden der Tasa-Informationsdatei wurde von Anzeiger diese getrennt. Es ist
+  erforderlich, den Wert der gepr. Seillänge auf der Reg-Karte "Fehlerstellen" 
+  zu ermitteln, damit diese in die Exceltabelle überführt werden kann. Auf der 
+  Registerkarte "TASA" wir die gepr. Seillänge nur in der ListBox für die 
+  Ausgabe der TASA-Infromationsdatei benötigt 
+ -Dateiname der TasaInfodatei modifiziert (Udo hat eine Extension abgeschnitten 
+ (".R32") die Datei endet mit ".DDF" deshalb in zeigeTasaIndfomationsDatei angepasst
+ -Die ausführbare Datei der Tasa___.exe wurde mit statischem Namen aufgerufen. 
+  Jetzt wird der Name aus der Registerkarte Einstellungen verwandt.  
+ -Die zur Verdügung stehenden TID-Dateien müssen auf Existenz geprüft und 
+  deren Namen ermittelt werden.
+ -Geprf. Seillänge wird nun bei der Ausgabe der bestätigten Fehlerstellenlist 
+  ermittelt (siehe: BTN_DbListeAusgeben_Click
+ -Nachricht an die Autoren in Hauptform eingefügt
+ -Ppfade zwischen den einzelnen Registerkarte wurden so angepasst,dass diese 
+  erhalten blieben bzw. auf deb aktuellen Datenpfad der ausgewählten Datei zeigen. 
+ -Vorbereitung zur Auslieferung der Version 1.3
+ -Zelle in der die gepr. Seillänge ladet, verändert. Siehe schreibeExcelGrafik
+ -ab sofort gibt es das Listenverzeichnis für die Ausgabelisten nicht mehr. 
+  Dies wurde überflüssig, da die alle Ausgaben im aktuellenDatenpfad gespeichert 
+  werden sollen. In der Klasse CEinstellungen (Programmeinstellungen) wurde die 
+  Variable "Listenverzeichnis" zum "aktuellerDatenPfad" umfunktioniert
+ -aus LBX_TasaInfo wurden die Testzeilen entfernt
+ -gerpüfte Seillänge nach Excel durchgereicht (Diagramme Seilfehlerstellen 30xd 
+  und 6xd)
+ -in initRegEinstellungen wurde der aktuelle Datenpfad beim Start (bei der 
+  Initialisierung) mit dem Inhalt des Datenpfades beschrieben
+ -Änderung des aktuellen Datenpfades (aktuellerDatenpfad) in allen Programmteilen
+  so, das er auf die CEinstellungen-Klasse verweist
+ -Dateiname der TasaInfodatei modifiziert (Udo hat eine Extension abgeschnitten 
+ (".R32") die Datei endet mit ".DDF" deshalb in zeigeTasaIndfomationsDatei angepasst
+ -Geprüfte Seillänge aus TASA-Informationsdatei lesen
+ -Button "Daten" zum Starten des Explorers ist nun immer aktiv.
+ -Das Laden der Tasa-Informationsdatei wurde von Anzeiger diese getrennt. Es ist
+  erforderlich, den Wert der gepr. Seillänge auf der Reg-Karte "Fehlerstellen" 
+  zu ermitteln, damit diese in die Exceltabelle überführt werden kann. Auf der 
+  Registerkarte "TASA" wir die gepr. Seillänge nur in der ListBox für die Ausgabe 
+  der TASA-Infromationsdatei benötigt 
+ -Dateiname der TasaInfodatei modifiziert (Udo hat eine Extension abgeschnitten 
+ (".R32") die Datei endet mit ".DDF" deshalb in zeigeTasaIndfomationsDatei angepasst
+ -Die zur Verdügung stehenden TID-Dateien müssen auf Existenz geprüft und deren 
+  Namen ermittelt werden.
+
+
+
+22.08.2011 Version 1.4 Revision 117
+-----------------------------------
+
+-Die X- und Y-Achse der Diagramme für die grafische Ausgabe der Seilfehlerstellen
+ wurde angepasst. Dür die X-Achse wurde auf die max. Anzahl der Fehlerstellen im Seil (+1) als 
+ Achsende angegeben. Dür die Y-Achse wurde auf die geprüfte Seillänge alsAchsende angegeben. 
+-Die Diagramm überschrift und das Profdatum werden nun in einem Dialog (DlgDiagrammdaten.cs)
+ vom Anwender abgefragt.
+
+
+
+24.08.2011 Version 1.4 Revision 120
+-----------------------------------
+ 
+-Achsen X/Y des Exceldiagramms formatiert
+-Dialog für Daten des Exceldiagramms hinzugefügt
+-Y-Achse auf max. Anzahl von Fehlern auf der Seillänge (+1) und und X_Achse 
+ auf gepr.Seillänge skaliert
+-Achsen des Exceldiagramms formatieren
+-geprüfte Seillänge wird nun in ExcelDiagramm ausgegeben
